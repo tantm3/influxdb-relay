@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  influxdb:
+    image: influxdb:1.7
+    ports:
+      - "1234:8086"
+    volumes:
+      - /tmp/influxdbrelay-influx:/var/lib/influxdb
+
+  influxdb2:
+    image: influxdb:1.7
+    ports:
+      - "5678:8086"
+    volumes:
+      - /tmp/influxdbrelay-influx2:/var/lib/influxdb
+
+  prometheus:
+    image: prom/prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+
+  telegraf:
+    image: telegraf:1.18-alpine
+    volumes:
+    - ./telegraf.conf:/etc/telegraf/telegraf.conf:ro
+    - ./data.json:/tmp/data.json
+    depends_on:
+      - relay
+    ports:
+    - '8186:8186'
+    
+  relay:
+    build:
+      context: .
+      dockerfile: Dockerfile.develop
+    ports:
+      - "9096:9096"

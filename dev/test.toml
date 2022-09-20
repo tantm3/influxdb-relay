@@ -1,0 +1,22 @@
+[[http]]
+name = "test-config"
+bind-addr = "0.0.0.0:9096"
+health-timeout-ms = 10000
+rate-limit = 5
+burst-limit = 10
+
+[[http.output]]
+name="influxdb01"
+location="http://influxdb:8086/"
+endpoints = {write="/write", ping="/ping", query="/query"}
+max-batch-kb=5
+
+
+[[http.output]]
+name="influxdb02"
+location="http://influxdb2:8086/"
+endpoints = {write="/write", ping="/ping", query="/query"}
+buffer-size-mb=100
+max-batch-kb=5
+max-delay-interval="5s"
+

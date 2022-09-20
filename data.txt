@@ -1,0 +1,2 @@
+rtmp.node_scrape_collector_duration_seconds,_region=RegionOne,_tenant_id=6e9b882ed77a476caca8c88f22f58950,collector=vmstat,host=prod-status-rtmp-node,url=http://push-12:9100/metrics,asdasdasd=zxczvaf,asadasf=asdzxczxvzzsd value=0.00015217 
+rtmp.node_scrape_collector_duration_seconds,_region=\,RegionOne,_tenant_id=6e9b882ed77a476caca8c88f22f58950,collector=vmstat,host=prod-status-rtmp-node,url=http://push-12:9100/metrics,asdasdasd=zxczvaf,asadasf=asdzxczxvzzsd value=0.00015217 
