@@ -654,7 +654,6 @@ scandir===1.10.0;python_version=='2.7'
 zipp===0.6.0
 sphinxcontrib-fulltoc===1.2.0
 smmap2===2.0.5
-greenlet===0.4.15
 XStatic-Angular-Vis===4.16.0.0
 confluent-kafka===1.1.0
 xvfbwrapper===0.2.9
