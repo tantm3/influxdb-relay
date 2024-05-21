@@ -530,7 +530,7 @@ oauthlib===3.1.0
 Babel===2.8.0
 logutils===0.3.5
 zipp===3.1.0
-greenlet===0.4.16
+greenlet===2.0.2
 XStatic-Angular-Vis===4.16.0.0
 iniconfig===1.0.1
 confluent-kafka===1.5.0
