@@ -445,7 +445,7 @@ python-qpid-proton===0.28.0
 python-octaviaclient===1.10.1
 pysaml2===4.8.0
 requests-oauthlib===1.2.0
-oslo.reports===2.0.0
+oslo.reports===1.30.0
 bitmath===1.3.3.1
 ceilometermiddleware===1.5.0
 python-nss===1.0.1
@@ -557,7 +557,7 @@ pyzmq===18.1.0
 oslo.db===5.0.2
 simplegeneric===0.8.1
 python-pcre===0.7
-yappi===1.5.1
+yappi===1.0
 abclient===0.2.3
 pymemcache===2.2.2
 wrapt===1.11.2
@@ -629,7 +629,7 @@ rjsmin===1.1.0
 icalendar===4.0.3
 configparser===3.8.1;python_version=='2.7'
 decorator===4.4.0
-cffi===1.16.0
+cffi===1.12.3
 futurist===1.9.0
 jsonschema===3.0.2
 sphinxcontrib-devhelp===1.0.1;python_version=='3.4'
