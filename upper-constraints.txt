@@ -140,7 +140,6 @@ requests-unixsocket===0.2.0
 asn1crypto===0.24.0
 croniter===0.3.30
 octavia-lib===1.4.0
-octavia===5.1.2
 python-watcherclient===2.4.0
 MarkupSafe===1.1.1
 pypowervm===1.1.20
